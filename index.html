@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santa Rosa de Quives</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#F5E6D3;
+    color:#444;
+}
+
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url("encabezado.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+header h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.4rem;
+    max-width:800px;
+    padding:0 20px;
+}
+
+.btn{
+    margin-top:25px;
+    padding:15px 35px;
+    border:none;
+    background:#EFA7B7;
+    color:white;
+    border-radius:30px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#d98b9e;
+}
+
+nav{
+    background:#7FAF8C;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    color:#7FAF8C;
+    margin-bottom:40px;
+    font-size:2.3rem;
+}
+
+.cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    color:#EFA7B7;
+    margin-bottom:10px;
+}
+
+.beneficios{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+}
+
+.beneficios ul{
+    line-height:2;
+    font-size:1.1rem;
+}
+
+footer{
+    background:#7FAF8C;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Quives Conecta</h1>
+
+<p>
+Descubre, explora y apoya la cultura local de Santa Rosa de Quives.
+Una plataforma que conecta a los visitantes con la historia, la naturaleza
+y los emprendedores de la comunidad.
+</p>
+
+<button class="btn">
+Explorar Destino
+</button>
+
+</header>
+
+<nav>
+<a href="#destinos">Destinos</a>
+<a href="#historia">Historia</a>
+<a href="#mapa">Guía Turística</a>
+<a href="#experiencias">Experiencias</a>
+<a href="#catalogo">Artesanías</a>
+<a href="#beneficios">Beneficios</a>
+</nav>
+
+<section id="destinos">
+
+<h2>Destinos Turísticos</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="iglesia.jpg">
+
+<div class="card-content">
+<h3>Santuario de Santa Rosa de Quives</h3>
+
+<p>
+Principal atractivo religioso e histórico de la localidad, vinculado a la vida de Santa Rosa de Lima.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+<img src="naturaleza.jpg">
+
+<div class="card-content">
+<h3>Miradores Naturales</h3>
+
+<p>
+Espacios desde donde los visitantes pueden apreciar los paisajes del valle y tomar fotografías.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+<img src="artesanias.jpg">
+
+<div class="card-content">
+<h3>Feria de Artesanías</h3>
+
+<p>
+Zona donde emprendedores locales ofrecen recuerdos, productos artesanales y artículos religiosos.
+</p>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="historia">
+
+<h2>Información Histórica</h2>
+
+<div class="beneficios">
+
+<p style="text-align:center; font-size:1.1rem; line-height:1.8;">
+Santa Rosa de Quives es un importante destino religioso ubicado en la provincia
+de Canta, en la región Lima. Este lugar está estrechamente relacionado con la
+vida de Santa Rosa de Lima, la primera santa de América, quien pasó parte de su
+infancia y juventud en esta localidad junto a su familia. Durante su estancia
+en Quives, participó en diversas labores cotidianas y fortaleció los valores de
+fe, servicio y solidaridad que más tarde la caracterizarían.
+
+<br><br>
+
+Actualmente, el Santuario de Santa Rosa de Quives conserva espacios históricos
+vinculados a su vida, como la iglesia, el pozo de los deseos y otros lugares de
+gran valor cultural y religioso. Gracias a su importancia histórica, espiritual
+y turística, recibe miles de visitantes y peregrinos cada año, quienes acuden
+para conocer más sobre la vida de la santa, participar en actividades religiosas
+y disfrutar del patrimonio cultural de la zona.
+</p>
+
+</div>
+
+</section>
+
+<section id="mapa">
+
+<h2>Guía Turística</h2>
+
+<div class="card" style="width:100%; max-width:900px; margin:auto;">
+
+<img src="pozo.jpg">
+
+<div class="card-content">
+
+<h3>Recorrido Turístico de Santa Rosa de Quives</h3>
+
+<p>
+Esta guía permite a los visitantes identificar los principales puntos de
+interés y planificar su recorrido dentro de Santa Rosa de Quives,
+facilitando una experiencia turística más organizada y enriquecedora.
+</p>
+
+<br>
+
+<h4>Puntos de Interés</h4>
+
+<ul style="line-height:2; margin-left:20px;">
+
+<li>📍 Santuario de Santa Rosa de Quives.</li>
+
+<li>📍 Pozo de los Deseos.</li>
+
+<li>📍 Feria de Artesanías.</li>
+
+<li>📍 Zona Gastronómica.</li>
+
+<li>📍 Miradores Naturales.</li>
+
+<li>📍 Senderos Ecológicos.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experiencias">
+
+<h2>Experiencias Turísticas</h2>
+
+<div class="card" style="width:100%; max-width:900px; margin:auto;">
+
+<img src="interior.jpg">
+
+<div class="card-content">
+
+<h3>Experiencias en Santa Rosa de Quives</h3>
+
+<p>
+Los visitantes podrán disfrutar de diversas actividades que combinan
+naturaleza, cultura, gastronomía y tradición.
+</p>
+
+<br>
+
+<h4>Actividades Disponibles</h4>
+
+<ul style="line-height:2; margin-left:20px;">
+
+<li>Caminatas ecológicas por los paisajes naturales de Quives.</li>
+<li>Recorridos guiados por el Santuario de Santa Rosa de Quives.</li>
+<li>Talleres de elaboración de artesanías con productores locales.</li>
+<li>Experiencias gastronómicas con platos típicos de la zona.</li>
+<li>Visitas a emprendimientos y negocios locales.</li>
+<li>Actividades culturales relacionadas con la historia y tradiciones de Quives.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="catalogo">
+
+<h2>Catálogo Digital de Artesanías</h2>
+
+<div class="card" style="width:100%; max-width:900px; margin:auto;">
+
+<img src="artesanias.jpg">
+
+<div class="card-content">
+
+<h3>Artesanías de Santa Rosa de Quives</h3>
+
+<p>
+Los visitantes podrán conocer y adquirir diversos productos elaborados por
+artesanos de la comunidad, contribuyendo al desarrollo económico local y a la
+preservación de las tradiciones culturales.
+</p>
+
+<br>
+
+<h4>Productos Disponibles</h4>
+
+<ul style="line-height:2; margin-left:20px;">
+
+<li>Rosario artesanal — S/15.00</li>
+<li>Llavero de Santa Rosa — S/10.00</li>
+<li>Figura decorativa religiosa — S/25.00</li>
+<li>Imán turístico de Quives — S/8.00</li>
+<li>Pulsera artesanal — S/12.00</li>
+<li>Recuerdo personalizado — S/20.00</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="beneficios">
+
+<h2>Beneficios de Quives Conecta</h2>
+
+<div class="beneficios">
+
+<ul>
+<li>✔ Incrementa las ventas de los emprendedores locales.</li>
+<li>✔ Promueve el turismo durante todo el año.</li>
+<li>✔ Difunde el patrimonio cultural y natural de Quives.</li>
+<li>✔ Facilita el acceso a información turística mediante tecnología.</li>
+<li>✔ Impulsa un modelo de desarrollo sostenible para la comunidad.</li>
+</ul>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Quives Conecta</h3>
+
+<p>
+Conectando tradición, turismo y tecnología.
+</p>
+
+</footer>
+
+</body>
+</html>
